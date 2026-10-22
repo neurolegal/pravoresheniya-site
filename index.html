@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Правовые решения. Юрист Рамис Хайруллин, Казань</title>
+<meta name="description" content="Юридическая компания «Правовые решения»: гражданские дела, сопровождение бизнеса, налоговые возвраты и гайды по частым ситуациям. Кандидат юридических наук, 15 лет практики.">
+<meta property="og:title" content="Правовые решения. Юрист Рамис Хайруллин">
+<meta property="og:description" content="Гражданские дела, сопровождение бизнеса, гайды по ДТП, налоговым возвратам и защите прав потребителей.">
+<meta property="og:image" content="https://pravoresheniya.ru/img/ramis-photo.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts.css">
+<style>
+/* Layout: wide editorial bands; headline + cut-out portrait in the hero; guides as the one shop-window block. */
+:root{
+  --paper:#f6f5f1;        /* warm-cool paper */
+  --paper-2:#ebeae4;      /* second surface */
+  --ink:#1a2140;          /* deep ink navy (text) */
+  --ink-2:#4a5068;        /* secondary text */
+  --brand:#485696;        /* logo blue */
+  --brand-deep:#2e3a73;
+  --accent:#e04a2a;       /* the red sweater */
+  --line:#d8d7cf;
+  --white:#ffffff;
+  --display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --body:"Golos Text","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#15192b;--paper-2:#1c2136;--ink:#eeeef4;--ink-2:#a9aec6;--brand:#8e9ad6;--brand-deep:#c3cbf2;--accent:#ff6a48;--line:#2c3350;--white:#1c2136;color-scheme:dark
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#15192b;--paper-2:#1c2136;--ink:#eeeef4;--ink-2:#a9aec6;--brand:#8e9ad6;--brand-deep:#c3cbf2;--accent:#ff6a48;--line:#2c3350;--white:#1c2136;color-scheme:dark
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(2.6rem,6.2vw,5.2rem)}
+h2{font-size:clamp(2.1rem,4.2vw,3.4rem)}
+h3{font-size:1.65rem;font-weight:600}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band{padding-block:clamp(56px,8vw,112px)}
+.lead{font-size:1.15rem;color:var(--ink-2);max-width:34em}
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:.95em 1.5em;border-radius:999px;border:1.5px solid transparent;font:500 1rem var(--body);cursor:pointer;text-decoration:none;white-space:nowrap;transition:background .15s,color .15s,border-color .15s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:#c43c20}
+.btn-ghost{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:68px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:1.25rem;line-height:1;letter-spacing:.02em;text-transform:uppercase}
+.logo svg{width:30px;height:30px;color:var(--brand)}
+.nav{display:flex;gap:28px;font-size:.95rem}
+.nav a{text-decoration:none;color:var(--ink-2)}
+.nav a:hover{color:var(--ink)}
+.top .btn{padding:.65em 1.2em;font-size:.92rem}
+@media (max-width:860px){.nav{display:none}}
+
+/* hero */
+.hero{overflow:hidden;background:var(--paper-2)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;align-items:end;gap:32px;min-height:560px}
+.hero-copy{padding-block:clamp(56px,8vw,110px)}
+.hero-copy h1 em{font-style:normal;color:var(--brand)}
+.hero-copy .lead{margin-top:24px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.hero-note{margin-top:28px;font-size:.92rem;color:var(--ink-2);display:flex;gap:10px;align-items:center}
+.hero-note b{font-weight:600;color:var(--ink)}
+.hero-photo{position:relative;align-self:end;min-width:0}
+.hero-photo::before{content:"";position:absolute;left:8%;right:8%;top:14%;bottom:0;background:var(--brand);border-radius:999px 999px 0 0;opacity:.95}
+.hero-photo img{position:relative;width:auto;height:auto;max-height:600px;max-width:100%;margin:0 auto}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;min-height:0}
+  .hero-copy{padding-bottom:16px}
+  .hero-photo img{max-height:440px}
+}
+
+/* facts strip */
+.facts{border-bottom:1px solid var(--line)}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.fact{padding:28px 20px 28px 0;border-left:1px solid var(--line);padding-left:20px}
+.fact:first-child{border-left:0;padding-left:0}
+.fact b{display:block;font-family:var(--display);font-size:2.6rem;font-weight:600;line-height:1;font-variant-numeric:tabular-nums;white-space:nowrap}
+.fact span{display:block;color:var(--ink-2);font-size:.92rem;margin-top:6px}
+@media (max-width:760px){.facts .wrap{grid-template-columns:1fr 1fr}.fact:nth-child(3){border-left:0;padding-left:0}.fact{padding-block:20px}}
+
+/* section head */
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:44px}
+.sec-head .lead{justify-self:end}
+@media (max-width:760px){.sec-head{grid-template-columns:1fr;gap:14px}.sec-head .lead{justify-self:start}}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.service{padding:32px 28px 36px 0;border-bottom:1px solid var(--line);border-right:1px solid var(--line);padding-right:28px}
+.service+.service{padding-left:28px}
+.service:last-child{border-right:0}
+.service h3{margin-bottom:12px}
+.service p{color:var(--ink-2)}
+.service ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:6px;font-size:.95rem}
+.service li::before{content:"";display:inline-block;width:6px;height:6px;background:var(--accent);border-radius:50%;margin-right:10px;vertical-align:middle}
+@media (max-width:860px){.services{grid-template-columns:1fr}.service{border-right:0;padding-left:0!important;padding-right:0}}
+
+/* guides: the shop window */
+.guides{background:var(--ink);color:var(--paper)}
+.guides .lead{color:color-mix(in srgb,var(--paper) 70%,transparent)}
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.guide{background:color-mix(in srgb,var(--paper) 7%,transparent);border:1px solid color-mix(in srgb,var(--paper) 16%,transparent);border-radius:18px;padding:28px 26px 26px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.guide .tag{font-size:.82rem;color:var(--accent);font-weight:500}
+.guide h3{font-size:1.9rem;line-height:1}
+.guide ol{margin:0;padding:0 0 0 1.3em;display:grid;gap:8px;font-size:.95rem;color:color-mix(in srgb,var(--paper) 82%,transparent)}
+.guide ol li::marker{color:var(--accent);font-weight:600}
+.guide-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;border-top:1px solid color-mix(in srgb,var(--paper) 16%,transparent)}
+.guide-foot .fmt{font-size:.85rem;color:color-mix(in srgb,var(--paper) 65%,transparent)}
+.guides .btn-ghost{border-color:var(--paper);color:var(--paper)}
+.guides .btn-ghost:hover{background:var(--paper);color:var(--ink)}
+@media (max-width:960px){.guide-grid{grid-template-columns:1fr}}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.about figure{margin:0;position:relative;min-width:0}
+.about figure img{border-radius:14px;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;max-width:100%}
+.about figcaption{position:absolute;left:18px;bottom:18px;background:var(--paper);color:var(--ink);padding:12px 16px;border-radius:10px;font-size:.9rem;line-height:1.35;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.about figcaption b{display:block;font-family:var(--display);font-size:1.25rem;font-weight:600}
+.about .text{display:grid;gap:18px}
+.about .text p{color:var(--ink-2);max-width:36em}
+.about .text p.first{color:var(--ink);font-size:1.2rem}
+.creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.creds span{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.88rem}
+@media (max-width:860px){.about .wrap{grid-template-columns:1fr;gap:32px}.about figure img{max-width:420px}}
+
+/* why */
+.why{background:var(--paper-2)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px 56px}
+.why-item h3{margin-bottom:10px}
+.why-item p{color:var(--ink-2);max-width:32em}
+@media (max-width:760px){.why-grid{grid-template-columns:1fr;gap:28px}}
+
+/* consult form */
+.consult .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.consult .text{display:grid;gap:18px}
+.consult .text p{color:var(--ink-2);max-width:30em}
+.contact-line{display:grid;gap:8px;font-size:1.05rem}
+.contact-line a{text-decoration:none;font-weight:500}
+.form{display:grid;gap:14px;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px}
+.form label{display:grid;gap:6px;font-size:.9rem;color:var(--ink-2)}
+.form input,.form textarea{font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;width:100%}
+.form textarea{min-height:110px;resize:vertical}
+.form .consent{font-size:.82rem;color:var(--ink-2);display:flex;gap:10px;align-items:flex-start}
+.form .consent input{width:auto;margin-top:3px}
+.form .done{padding:14px 16px;border-radius:10px;background:color-mix(in srgb,var(--brand) 12%,var(--white));color:var(--ink);font-size:.95rem}
+@media (max-width:860px){.consult .wrap{grid-template-columns:1fr;gap:32px}}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding-block:36px;font-size:.9rem;color:var(--ink-2)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px 40px}
+footer .cols{display:flex;flex-wrap:wrap;gap:14px 28px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--ink)}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Правовые решения">
+      <svg viewBox="0 0 30 30" fill="currentColor" aria-hidden="true"><path d="M2 3h26l-3 4H5z"/><path d="M6 9h4v15H6zM13 9h4v18l-4-3zM20 9h4v9l-4 3z"/></svg>
+      <span>Правовые<br>решения</span>
+    </a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#services">Услуги</a>
+      <a href="#guides">Гайды</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn-primary" href="#consult">Консультация</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1>Юрист, который <em>решает</em> вопрос, а не растягивает его.</h1>
+      <p class="lead">Частная практика Рамиса Хайруллина: гражданские дела, сопровождение бизнеса и возвраты по всей России. Пятнадцать лет в профессии, кандидат юридических наук.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#consult">Обсудить мою ситуацию</a>
+        <a class="btn btn-ghost" href="#guides">Купить гайд</a>
+      </div>
+      <p class="hero-note">Ответ по вашему вопросу в день обращения. <b>Казань и вся Россия</b></p>
+    </div>
+    <div class="hero-photo">
+      <img src="img/ramis.png" alt="Рамис Хайруллин за рабочим столом" width="1100" height="1649">
+    </div>
+  </div>
+</section>
+
+<section class="facts" aria-label="Итоги 2023 года">
+  <div class="wrap">
+    <div class="fact"><b>15</b><span>лет в юридической практике</span></div>
+    <div class="fact"><b>67</b><span>успешных дел за 2023 год</span></div>
+    <div class="fact"><b>500 млн ₽</b><span>взыскано для доверителей за 2023 год</span></div>
+    <div class="fact"><b>62</b><span>доверителя за 2023 год</span></div>
+  </div>
+</section>
+
+<section class="band" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Чем помогаю</h2>
+      <p class="lead">Три направления. Если ваш вопрос не вписывается ни в одно, напишите, разберёмся вместе.</p>
+    </div>
+    <div class="services">
+      <article class="service">
+        <h3>Гражданские дела</h3>
+        <p>Защита интересов частных лиц в суде и до суда.</p>
+        <ul>
+          <li>Защита прав потребителей</li>
+          <li>Наследственные дела</li>
+          <li>Семейные споры</li>
+          <li>Жилищные споры</li>
+        </ul>
+      </article>
+      <article class="service">
+        <h3>Для бизнеса</h3>
+        <p>От регистрации компании до спора с контрагентом.</p>
+        <ul>
+          <li>Регистрация бизнеса</li>
+          <li>Договоры и соглашения</li>
+          <li>Претензионно-исковая работа</li>
+          <li>Корпоративные вопросы и сопровождение</li>
+        </ul>
+      </article>
+      <article class="service">
+        <h3>Наставничество</h3>
+        <p>Для юристов, которые хотят расти в профессии.</p>
+        <ul>
+          <li>Менторство и разбор дел</li>
+          <li>Профессиональная подготовка</li>
+          <li>Карьерные траектории в юриспруденции</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band guides" id="guides">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Гайды: когда нужен ответ сегодня</h2>
+      <p class="lead">Пошаговые инструкции по самым частым ситуациям. Написаны практикующим юристом, без воды и ссылок на кодексы без пояснений.</p>
+    </div>
+    <div class="guide-grid">
+      <article class="guide">
+        <span class="tag">Для водителей</span>
+        <h3>Гайд по ДТП</h3>
+        <ol>
+          <li>Что делать сразу после ДТП</li>
+          <li>Как заполнить аварийный протокол</li>
+          <li>Основной документ водителя</li>
+          <li>Взаимодействие со страховой компанией</li>
+          <li>Возможные правовые последствия</li>
+          <li>Советы по безопасности на дороге</li>
+        </ol>
+        <div class="guide-foot">
+          <span class="fmt">PDF, чек-листы внутри</span>
+          <a class="btn btn-ghost" href="https://taplink.cc/gaidpodtp" target="_blank" rel="noopener">Купить гайд</a>
+        </div>
+      </article>
+      <article class="guide">
+        <span class="tag">Для тех, кто платит налоги</span>
+        <h3>Гайд по налоговым возвратам</h3>
+        <ol>
+          <li>Возврат за покупку квартиры</li>
+          <li>Возврат за лечение</li>
+          <li>Возврат за обучение</li>
+          <li>Возврат по индивидуальному инвестиционному счёту</li>
+          <li>Возврат за оплату фитнес-клуба</li>
+        </ol>
+        <div class="guide-foot">
+          <span class="fmt">PDF, формы заявлений</span>
+          <button class="btn btn-ghost" type="button" data-guide="Гайд по налоговым возвратам">Купить гайд</button>
+        </div>
+      </article>
+      <article class="guide">
+        <span class="tag">Для покупателей и заказчиков</span>
+        <h3>Гайд по защите прав потребителей</h3>
+        <ol>
+          <li>Основные права потребителя</li>
+          <li>Порядок и формы защиты своих прав</li>
+          <li>Особые случаи, на которые стоит обратить внимание</li>
+          <li>Как предупредить нарушение своих прав</li>
+        </ol>
+        <div class="guide-foot">
+          <span class="fmt">PDF, шаблоны претензий</span>
+          <button class="btn btn-ghost" type="button" data-guide="Гайд по защите прав потребителей">Купить гайд</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band about" id="about">
+  <div class="wrap">
+    <figure>
+      <img src="img/ramis-photo.jpg" alt="Рамис Хайруллин" width="1200" height="1800">
+      <figcaption><b>Рамис Хайруллин</b>Кандидат юридических наук,<br>член Ассоциации юристов России</figcaption>
+    </figure>
+    <div class="text">
+      <h2>Обо мне</h2>
+      <p class="first">С 2008 года помогаю доверителям решать юридические вопросы по всей России. Веду частную практику и преподаю в Казанском федеральном университете.</p>
+      <p>Моя команда работает во всех основных областях права. Нам доверяют крупный бизнес и влиятельные люди Татарстана, и это обязывает каждое дело вести так, будто оно единственное.</p>
+      <p>Если вам нужна консультация, буду рад помочь. Первый разговор занимает двадцать минут: вы рассказываете ситуацию, я говорю, какие перспективы вижу и что делать дальше.</p>
+      <div class="creds">
+        <span>Кандидат юридических наук</span>
+        <span>Преподаватель КФУ</span>
+        <span>Автор юридических работ</span>
+        <span>Ассоциация юристов России</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band why">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Почему со мной стоит поговорить</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <h3>Подтверждённый опыт</h3>
+        <p>Больше пятнадцати лет практики, учёная степень, преподавание и публикации. Сложные задачи для нас привычная работа, а не исключение.</p>
+      </div>
+      <div class="why-item">
+        <h3>Честная оценка перспектив</h3>
+        <p>Главный принцип: сказать, как есть. Вы получаете объективный разбор ситуации на основе фактов, а не обещание выиграть любой ценой.</p>
+      </div>
+      <div class="why-item">
+        <h3>Комфортное сотрудничество</h3>
+        <p>Понятные условия, спокойное общение и ощущение, что вопрос в надёжных руках. Вы всегда знаете, на каком этапе дело.</p>
+      </div>
+      <div class="why-item">
+        <h3>Быстрый отклик</h3>
+        <p>Отвечаем оперативно, держим дедлайны и не теряем время на лишние согласования.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band consult" id="consult">
+  <div class="wrap">
+    <div class="text">
+      <h2>Обсудим вашу ситуацию</h2>
+      <p>Сформулируем задачу и найдём оптимальное решение. Напишите пару строк о том, что случилось, и я свяжусь с вами в удобном для вас мессенджере.</p>
+      <div class="contact-line" id="contacts">
+        <a href="tel:+79178940600">+7 917 894 06 00</a>
+        <a href="mailto:pravoresheniya@mail.ru">pravoresheniya@mail.ru</a>
+        <span>Telegram и WhatsApp по тому же номеру</span>
+      </div>
+    </div>
+    <form class="form" id="consult-form" novalidate>
+      <label>Как к вам обращаться
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+      </label>
+      <label>Телефон или Telegram
+        <input id="f-phone" name="phone" type="text" autocomplete="tel" required>
+      </label>
+      <label>Что случилось
+        <textarea id="f-text" name="text" placeholder="Например: купил машину, через неделю выяснилось, что она в залоге"></textarea>
+      </label>
+      <label class="consent"><input id="f-consent" type="checkbox" required><span>Согласен на обработку персональных данных и ознакомлен с политикой конфиденциальности</span></label>
+      <button class="btn btn-primary" type="submit">Отправить заявку</button>
+      <p class="done" id="form-done" hidden>Заявка принята. Это прототип: в рабочей версии здесь будет отправка в CRM и Telegram.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>2023–2026 © Рамис Хайруллин, ООО «Правовые решения»</div>
+    <div class="cols">
+      <a href="#">Политика конфиденциальности</a>
+      <a href="#">Согласие на обработку персональных данных</a>
+      <a href="https://instagram.com/khayrullin_ramis" target="_blank" rel="noopener">Instagram</a>
+      <a href="#">ВКонтакте</a>
+      <a href="#">Telegram</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form=document.getElementById('consult-form');
+  var done=document.getElementById('form-done');
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=form.querySelector('#f-name').value.trim()&&form.querySelector('#f-phone').value.trim()&&form.querySelector('#f-consent').checked;
+    if(!ok){done.hidden=false;done.textContent='Заполните имя, контакт и поставьте галочку согласия.';return;}
+    done.textContent='Заявка принята. Это прототип: в рабочей версии здесь будет отправка в CRM и Telegram.';
+    done.hidden=false;
+  });
+  document.querySelectorAll('[data-guide]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=document.getElementById('f-text');
+      t.value='Хочу купить: '+b.dataset.guide;
+      document.getElementById('consult').scrollIntoView({behavior:'smooth'});
+      setTimeout(function(){document.getElementById('f-name').focus()},500);
+    });
+  });
+})();
+</script>
+</body>
+</html>
