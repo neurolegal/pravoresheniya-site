@@ -5,7 +5,7 @@
 - `index.html` — вся страница, стили внутри.
 - `fonts/`, `fonts.css` — Cormorant Garamond и Golos Text (latin + cyrillic), самохост.
 - `img/` — фотографии.
-- `CNAME` — пользовательский домен для GitHub Pages.
+- Свой домен пока не подключён: сайт живёт на https://neurolegal.github.io/pravoresheniya-site/. Для pravoresheniya.ru добавить файл `CNAME` с доменом и DNS-записи ниже.
 
 Форма заявки пока не отправляет данные: нужен бэкенд (Telegram-бот или почта).
 
